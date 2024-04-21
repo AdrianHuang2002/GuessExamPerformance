@@ -1,6 +1,6 @@
 Assuming you have python installed and all the required packages<br>
 #Step 1:<br>
-go into detr and open terminal run:<br>
+go into detr then create the directory named static with two sub folders named processed and videos, and open terminal run:<br>
 python app.py<br>
 you can then follow the link the access the webpage locally<br>
 #Step 2:<br>
