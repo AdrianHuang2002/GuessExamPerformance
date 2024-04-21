@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Upload and display test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        </head>
+        <body>
+        <p><h1 align="center"></h1></p>
+        <div class="container">
+            <div id="loading" style="display: none;">Processing... This may take up to a few minutes</div>
+            {% if processed %}
+                <div>
+                    <h2>Processed Video:</h2>
+                    <video width="600" height="400" controls></video>
+                    <source src="{{ url_for('display_video', filename=processed) }}" type="video/mp4">
+                    {% if result %}
+                        <p>Estimated Test Result: {{ result }}</p>
+                    {% endif %}                    
+                </div>
+            {% endif %}
+
+            <form method="post" action="{{url_for('upload')}}" enctype="multipart/form-data">
+                <dl>
+                    <input type="file" name="video" class="form-control" autocomplete="off" required>
+                </dl>
+                <input type="submit" value="Submit" onclick="showLoading()">
+
+            </form>
+        </div>
+        <script>
+            function showLoading() {
+                document.getElementById('loading').style.display = 'block';
+            }
+        </script>
+        </body>
+</html>
