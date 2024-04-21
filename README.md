@@ -9,7 +9,7 @@ then you can view the processed videos following the directory detr/static/proce
 Demo video link:<br>
 https://youtu.be/chLOtS3u0Fo
 
-If this repo doesn't work, follow to 
+If this repo doesn't work, follow detailed instructions on:<br>
 https://github.com/cyzhang39/GuessExamGrade.git
 
 
