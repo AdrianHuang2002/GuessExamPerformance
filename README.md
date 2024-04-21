@@ -10,5 +10,6 @@ Demo video link:<br>
 https://youtu.be/chLOtS3u0Fo
 
 If this repo doesn't work, follow to 
+https://github.com/cyzhang39/GuessExamGrade.git
 
 
